@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WebStudio</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon//favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon//favicon-16x16.png" />
+    <link rel="manifest" href="./favicon//site.webmanifest" />
+    <link rel="mask-icon" href="./favicon//safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- --normolize-- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style -->
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-conteiner container">
+        <nav class="header-nav">
+          <a class="logo link" lang="en" href="./index.html"
+            >Web<span class="header-logo-color">Studio</span></a
+          >
+          <ul class="header-menu list">
+            <li class="header-menu-item item">
+              <a class="header-nav-link link" href="./index.html">Студія</a>
+            </li>
+            <li class="header-menu-item item">
+              <a class="header-nav-link link current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-menu-item item">
+              <a class="header-nav-link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-nav list">
+          <li class="header-contacs-item item">
+            <a class="header-contacs link" href="mailto:info@devstudio.com">
+              <svg class="contacts-icon icon" width="16" ; height="12" ;>
+                <use href="./images/sprite_orig.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contacs-item item">
+            <a class="header-contacs link" href="tel:+380961111111"
+              ><svg class="contacts-icon icon" width="10" ; height="16" ;>
+                <use href="./images/sprite_orig.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Фільтр</h1>
+
+          <ul class="filtr list">
+            <li class="filtr__item item">
+              <button class="filtre__btn current" type="button">Усі</button>
+            </li>
+            <li class="filtr__item item">
+              <button class="filtre__btn current" type="button">Веб-сайти</button>
+            </li>
+            <li class="filtr__item item">
+              <button class="filtre__btn current" type="button">Додатки</button>
+            </li>
+            <li class="filtr__item item">
+              <button class="filtre__btn current" type="button">Дизайн</button>
+            </li>
+            <li class="filtr__item item">
+              <button class="filtre__btn current" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="portfolio list">
+            <li class="portfolio__item item">
+              <div class="portfolio__cover">
+                <img
+                  class="porfolio__img"
+                  src="./images/portfolio/project1.jpg"
+                  alt="ноутбук з проектами"
+                  width="370"
+                  height="294"
+                />
+                <p class="portfolio__description">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                  це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
+                  особу.
+                </p>
+              </div>
+              <div class="portfolio__wraper">
+                <h2 class="portfolio__title">Технокяк</h2>
+                <p class="portfolio__text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio__item item">
+              <div class="portfolio__cover">
+                <img
+                  class="porfolio__img"
+                  src="./images/portfolio/project2.jpg"
+                  alt="баскетболісти"
+                  width="370"
+                  height="294"
+                />
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laudantium
+                  ipsa quis nam placeat ea natus molestias dolorem culpa libero. Molestias earum
+                  maiores, tempore hic deleniti fugit dolore? Perspiciatis, ipsam?
+                </p>
+              </div>
+              <div class="portfolio__wraper">
+                <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+                <p class="portfolio__text">Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio__item item">
+              <div class="portfolio__cover">
+                <img
+                  class="porfolio__img"
+                  src="./images/portfolio/project3.jpg"
+                  alt="логоти ресторану"
+                  width="370"
+                  height="294"
+                />
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laudantium
+                  ipsa quis nam placeat ea natus molestias dolorem culpa libero. Molestias earum
+                  maiores, tempore hic deleniti fugit dolore? Perspiciatis, ipsam?
+                </p>
+              </div>
+
+              <div class="portfolio__wraper">
+                <h2 class="portfolio__title">Ресторан Seafood</h2>
+                <p class="portfolio__text">Додаток</p>
+              </div>
+            </li>
+            <li class="portfolio__item item">
+              <div class="portfolio__cover">
+                <img
+                  class="porfolio__img"
+                  src="./images/portfolio/project4.jpg"
+                  alt="навушники"
+                  width="370"
+                  height="294"
+                />
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laudantium
+                  ipsa quis nam placeat ea natus molestias dolorem culpa libero. Molestias earum
+                  maiores, tempore hic deleniti fugit dolore? Perspiciatis, ipsam?
+                </p>
+              </div>
+
+              <div class="portfolio__wraper">
+                <h2 class="portfolio__title">Проєкт Prime</h2>
+                <p class="portfolio__text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio__item item">
+              <div class="portfolio__cover">
+                <img
+                  class="porfolio__img"
+                  src="./images/portfolio/project5.jpg"
+                  alt="дві картонні коробки"
+                  width="370"
+                  height="294"
+                />
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laudantium
+                  ipsa quis nam placeat ea natus molestias dolorem culpa libero. Molestias earum
+                  maiores, tempore hic deleniti fugit dolore? Perspiciatis, ipsam?
+                </p>
+              </div>
+
+              <div class="portfolio__wraper">
+                <h2 class="portfolio__title">Проєкт Boxes</h2>
+                <p class="portfolio__text">Додаток</p>
+              </div>
+            </li>
+            <li class="portfolio__item item">
+              <div class="portfolio__cover">
+                <img
+                  class="porfolio__img"
+                  src="./images/portfolio/project6.jpg"
+                  alt="монітор комп'ютера"
+                  width="370"
+                  height="294"
+                />
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laudantium
+                  ipsa quis nam placeat ea natus molestias dolorem culpa libero. Molestias earum
+                  maiores, tempore hic deleniti fugit dolore? Perspiciatis, ipsam?
+                </p>
+              </div>
+
+              <div class="portfolio__wraper">
+                <h2 class="portfolio__title">Inspiration has no Borders</h2>
+                <p class="portfolio__text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio__item item">
+              <div class="portfolio__cover">
+                <img
+                  class="porfolio__img"
+                  src="./images/portfolio/project7.jpg"
+                  alt="розгоруна книга"
+                  width="370"
+                  height="294"
+                />
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laudantium
+                  ipsa quis nam placeat ea natus molestias dolorem culpa libero. Molestias earum
+                  maiores, tempore hic deleniti fugit dolore? Perspiciatis, ipsam?
+                </p>
+              </div>
+
+              <div class="portfolio__wraper">
+                <h2 class="portfolio__title">Видання Limited Edition</h2>
+                <p class="portfolio__text">Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio__item item">
+              <div class="portfolio__cover">
+                <img
+                  class="porfolio__img"
+                  src="./images/portfolio/project8.jpg"
+                  alt="бірка з лого "
+                  width="370"
+                  height="294"
+                />
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laudantium
+                  ipsa quis nam placeat ea natus molestias dolorem culpa libero. Molestias earum
+                  maiores, tempore hic deleniti fugit dolore? Perspiciatis, ipsam?
+                </p>
+              </div>
+
+              <div class="portfolio__wraper">
+                <h2 class="portfolio__title">Проєкт LAB</h2>
+                <p class="portfolio__text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio__item item">
+              <div class="portfolio__cover">
+                <img
+                  class="porfolio__img"
+                  src="./images/portfolio/project9.jpg"
+                  alt="ноутбук"
+                  width="370"
+                  height="294"
+                />
+                <p class="portfolio__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laudantium
+                  ipsa quis nam placeat ea natus molestias dolorem culpa libero. Molestias earum
+                  maiores, tempore hic deleniti fugit dolore? Perspiciatis, ipsam?
+                </p>
+              </div>
+              <div class="portfolio__wraper">
+                <h2 class="portfolio__title">Growing Business</h2>
+                <p class="portfolio__text">Додаток</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="position-footer">
+          <a class="logo link" href="./index.html" lang="en">
+            Web<span class="footeer-logo-color">Studio</span></a
+          >
+          <address class="addres">
+            <ul class="section-list list">
+              <li class="addres-item item">
+                <a
+                  class="addres-map link"
+                  href="https://goo.gl/maps/US4AF3qVMDQXfiKQA"
+                  target="_blank"
+                  rel="noopenet noreferrer nofollow"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="addres-item item">
+                <a class="addres-link link" href="malito:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="addres-item item">
+                <a class="addres-link link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="position">
+          <p class="social-text">приєднуйтесь</p>
+          <ul class="social-list list">
+            <li class="social-item item">
+              <a
+                class="social-link link aria-label='instagram'"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopenet noreferrer nofollow"
+              >
+                <svg class="foter-soc-icon" width="20" height="20">
+                  <use href="./images/sprite_orig.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item item">
+              <a
+                class="social-link link aria-label='twiter'"
+                href="https://twitter.com/?lang=ru"
+                target="_blank"
+                rel="noopenet noreferrer nofollow"
+              >
+                <svg class="foter-soc-icon" width="20" height="20">
+                  <use href="./images/sprite_orig.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item item">
+              <a
+                class="social-link link aria-label='facebook'"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopenet noreferrer nofollow"
+              >
+                <svg class="foter-soc-icon" width="20" height="20">
+                  <use href="./images/sprite_orig.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item item">
+              <a
+                class="social-link link aria-label='linkidin'"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopenet noreferrer nofollow"
+              >
+                <svg class="foter-soc-icon" width="20" height="20">
+                  <use href="./images/sprite_orig.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="follow">
+          <span class="follow-text">Підпишіться на розсилку</span>
+          <label for="mail" class="follow-label">
+            <input type="mail" name="mail" placeholder="E-mail" class="follow-input" />
+            <button type="submit" class="follow-btn">
+              Підписатися
+              <svg class="follow-icon" width="24" height="24">
+                <use href="./images/sprite_orig.svg#icon-send"></use>
+              </svg>
+            </button>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

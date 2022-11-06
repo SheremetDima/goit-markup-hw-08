@@ -1,0 +1,67 @@
+/*------------- ADVANTAGE -------------*/
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.advantage-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantage-list {
+  display: flex;
+  gap: 30px;
+}
+
+.advantage-item {
+  width: 270px;
+}
+
+.advantage-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: var(--second-backgraund-color);
+  border-radius: 4px;
+  /* margin: 30px auto; */
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .advantage-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.advantage-item.icon-antenna::before {
+  background-image: url(../images/decor/antenna.svg);
+}
+.advantage-item.icon-clock::before {
+  background-image: url(../images/decor/clock.svg);
+}
+.advantage-item.icon-diagram::before {
+  background-image: url(../images/decor/diagram.svg);
+}
+.advantage-item.icon-astronaut::before {
+  background-image: url(../images/decor/astronaut.svg);
+} */
+
+.advantage-text {
+  line-height: 1.71;
+  color: var(--content-text-colot);
+}
+

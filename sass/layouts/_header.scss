@@ -1,0 +1,131 @@
+/*------------- HEADER -------------*/
+.header {
+  border: 1px solid #ececec;
+}
+
+.header-conteiner {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  margin-left: 93px;
+}
+
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.header-logo-color {
+  color: #000000;
+}
+
+.header-menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-nav-link {
+  display: block;
+  padding: 32px 0px;
+
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+}
+
+.header-nav-link.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.header-contacs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 32px 0px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--content-text-colot);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+}
+
+.header-contacs-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts-icon {
+  fill: currentColor;
+}
+
+.header-nav-link.link.current {
+  color: var(--accent-color);
+}
+
+/* .header-contacs::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/decor/envelope.svg);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+} */
+
+// .header-nav-link:hover,
+// .header-nav-link:focus,
+// .header-nav-link:active,
+// .header-contacs:hover,
+// .header-contacs:focus,
+// .header-contacs:active {
+//   color: var(--accent-color);
+// }
+// .contacts-icon:hover {
+//   color: var(--accent-color);
+// }
