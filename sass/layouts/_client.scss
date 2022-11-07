@@ -1,10 +1,18 @@
 /* ------------ CLIENT ------------ */
 .client-list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .client-link {

@@ -4,6 +4,7 @@
 }
 
 .team-img {
+  width: 100%;
   margin-bottom: 30px;
 }
 .team-title {
@@ -16,7 +17,10 @@
 
 .team-list {
   display: flex;
+  // flex-flow: column wrap;
   gap: 30px;
+
+
 }
 
 .team-item {

@@ -1,11 +1,10 @@
-@import './utils/vars';
-@import './utils/section';
-@import './utils/hidden';
-
-
 @import './base/reset';
 @import './base/common';
 
+@import './utils/vars';
+@import './utils/section';
+@import './utils/hidden';
+@import './utils/mixin';
 
 @import './component/contriner';
 @import './component/modal';
@@ -21,5 +20,3 @@
 
 @import './pages/filtre';
 @import './pages/portfolio';
-
-
