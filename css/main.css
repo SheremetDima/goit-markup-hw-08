@@ -339,26 +339,61 @@ body {
 
 /*------------- HEADER -------------*/
 .header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 1px solid #ececec;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .header-conteiner {
   display: flex;
-}
-
-.header-nav {
-  display: flex;
   align-items: center;
 }
 
-.header-menu {
-  display: flex;
-  margin-left: 93px;
+.header-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: block;
+    margin-left: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+  }
 }
 
 .contacts-nav {
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 96px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-nav {
+    gap: 30px;
+    margin-left: auto;
+  }
 }
 
 .logo {
@@ -371,10 +406,6 @@ body {
 
 .header-logo-color {
   color: #000000;
-}
-
-.header-menu-item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .header-nav-link {
@@ -403,12 +434,12 @@ body {
 }
 
 .header-contacs {
+  font-size: 12px;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 32px 0px;
   font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--content-text-colot);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -417,14 +448,11 @@ body {
 .header-contacs:hover, .header-contacs:focus, .header-contacs:active {
   color: var(--accent-color);
 }
-
-.header-contacs-item {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.header-contacs-item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .header-contacs {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts-icon {
@@ -531,6 +559,8 @@ body {
   letter-spacing: 0.06em;
   color: var(--second-text-color);
   background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   cursor: pointer;
   border: none;
   padding: 10px 24px;

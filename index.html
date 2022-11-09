@@ -37,12 +37,11 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-conteiner container">
+        <a class="logo link" lang="en" href="./index.html"
+          >Web<span class="header-logo-color">Studio</span></a>
         <nav class="header-nav">
-          <a class="logo link" lang="en" href="./index.html"
-            >Web<span class="header-logo-color">Studio</span></a
-          >
           <ul class="header-menu list">
             <li class="header-menu-item item">
               <a class="header-nav-link link current" href="./index.html">Студія</a>
@@ -60,25 +59,23 @@
             <a class="header-contacs link" href="mailto:info@devstudio.com">
               <svg class="contacts-icon icon" width="16" ; height="12" ;>
                 <use href="./images/sprite_orig.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
+              </svg>info@devstudio.com
             </a>
           </li>
           <li class="header-contacs-item item">
             <a class="header-contacs link" href="tel:+380961111111"
               ><svg class="contacts-icon icon" width="10" ; height="16" ;>
                 <use href="./images/sprite_orig.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
+              </svg>+38 096 111 11 11
             </a>
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- ------------- HERO ---------------- -->
-      <section class="hero ">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
@@ -146,27 +143,52 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="action-list list">
             <li class="action-img item">
-              <img
-                src="./images/desctop/Action-Desctop-img.jpg"
-                alt="Посилвння на курс №1"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/Action-Desctop-img.jpg,
+                    ./images/desctop/Desktop-desk-2x.jpg
+                  "
+                />
+                <img
+                  src="./images/desctop/Action-Desctop-img.jpg"
+                  alt="Посилвння на курс №1"
+                  width="370"
+                />
+              </picture>
               <h3 class="action-text">Десктопні додатки</h3>
             </li>
             <li class="action-img item">
-              <img
-                src="./images/desctop/Action-Mobail-img.jpg"
-                alt="Посилвння на курс №2"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/Action-Mobail-img.jpg,
+                    ./images/desctop/Mobail-desk-2x.jpg
+                  "
+                />
+                <img
+                  src="./images/desctop/Action-Mobail-img.jpg"
+                  alt="Посилвння на курс №2"
+                  width="370"
+                />
+              </picture>
               <h3 class="action-text">Мобільні додатки</h3>
             </li>
             <li class="action-img item">
-              <img
-                src="./images/desctop/Action-Desing-img.jpg"
-                alt="Посилвння на курс №3"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/Action-Desing-img.jpg,
+                    ./images/desctop/Desing-desk-2x.jpg
+                  "
+                />
+                <img
+                  src="./images/desctop/Action-Desing-img.jpg"
+                  alt="Посилвння на курс №3"
+                  width="370"
+                />
+              </picture>
+
               <h3 class="action-text">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -180,13 +202,35 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item item">
-              <img
-                class="team-img"
-                src="./images/desctop/ProductDesigner.jpg"
-                alt="Фото Дизайнера "
-                width="270"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/ProductDesigner.jpg    1x,
+                    ./images/desctop/ProductDesigner-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Product-Designer-tab.jpg    1x,
+                    ./images/tablet/Product-Designer-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobail/Product-Designer-mob.jpg   1x,
+                    /images/mobail/Product-Designer-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-img"
+                  src="./images/desctop/ProductDesigner.jpg"
+                  alt="Фото Дизайнера "
+                  width="270"
+                />
+              </picture>
               <div class="team-content">
                 <h3 class="team-title">Ігор Дем'яненко</h3>
                 <p class="team-text" lang="en">Product Designer</p>
@@ -242,13 +286,35 @@
               </div>
             </li>
             <li class="team-item item">
-              <img
-                class="team-img"
-                src="./images/desctop/FrontendDeveloper.jpg"
-                alt="Фото Фронтенд-розробника"
-                width="270"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/FrontendDeveloper.jpg    1x,
+                    ./images/desctop/FrontendDeveloper-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Frontend-Developer-tab.jpg    1x,
+                    ./images/tablet/Frontend-Developer-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobail/Frontend-Developer-mob.jpg   1x,
+                    /images/mobail/Frontend-Developer-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-img"
+                  src="./images/desctop/FrontendDeveloper.jpg"
+                  alt="Фото Фронтенд-розробника"
+                  width="270"
+                />
+              </picture>
               <div class="team-content">
                 <h3 class="team-title">Ольга Рєпіна</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -304,13 +370,32 @@
               </div>
             </li>
             <li class="team-item item">
-              <img
-                class="team-img"
-                src="./images/desctop/Marketing.jpg"
-                alt="Фото маркитолога"
-                width="270"
-              />
-
+              <picture>
+                <source
+                  srcset="./images/desctop/Marketing.jpg 1x, ./images/desctop/Marketing-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Marketing-tab.jpg    1x,
+                    ./images/tablet/Marketing-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobail/Marketing-mob.jpg   1x,
+                    /images/mobail/Marketing-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-img"
+                  src="./images/desctop/Marketing.jpg"
+                  alt="Фото маркитолога"
+                  width="270"
+                />
+              </picture>
               <div class="team-content">
                 <h3 class="team-title">Микола Тарасов</h3>
                 <p class="team-text" lang="en">Marketing</p>
@@ -366,13 +451,35 @@
               </div>
             </li>
             <li class="team-item item">
-              <img
-                class="team-img"
-                src="./images/desctop/UI-Designer.jpg"
-                alt="фото Дизайнера інтерфейсу користувача"
-                width="270"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/UI-Designer.jpg    1x,
+                    ./images/desctop/UI-Designer-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/UI-Designer-tab.jpg    1x,
+                    ./images/tablet/UI-Designer-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobail/UI-Designer-mob.jpg   1x,
+                    /images/mobail/UI-Designer-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-img"
+                  src="./images/desctop/UI-Designer.jpg"
+                  alt="фото Дизайнера інтерфейсу користувача"
+                  width="270"
+                />
+              </picture>
               <div class="team-content">
                 <h3 class="team-title">Михайло Єрмаков</h3>
                 <p class="team-text" lang="en">UI Designer</p>
@@ -585,6 +692,8 @@
       </div>
     </footer>
 
+    <!-- backdrop ------------>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
@@ -594,7 +703,7 @@
         </button>
 
         <!-- FORM -->
-        <!-- <form class="form">
+        <form class="form">
           <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
 
           <div class="modal-field">
@@ -676,7 +785,7 @@
             <a href="" class="check-text-link link"> Умови договору</a>
           </div>
           <button class="form-btn" type="submit">Відправити</button>
-        </form> -->
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
