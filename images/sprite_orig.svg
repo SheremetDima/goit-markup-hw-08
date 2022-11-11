@@ -80,5 +80,11 @@
 <symbol id="icon-cheked" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4923" d="M4.817 15.39l-0.17-0.162-0.17 0.16-2.373 2.25 0.187 0.18 8.775 8.369 0.17-0.162 18.658-17.799-0.187-0.177-2.341-2.233-0.17 0.162-16.13 15.375-6.25-5.962z"></path>
 </symbol>
+<symbol id="icon-menu-mob" viewBox="0 0 48 32">
+<path d="M0 5.334v-5.334h48v5.334h-48zM0 18.666h48v-5.332h-48v5.332zM0 32h48v-5.334h-48v5.334z"></path>
+</symbol>
+<symbol id="icon-close-mob" viewBox="0 0 32 32">
+<path d="M31.439 3.166l-3.166-3.166-12.554 12.552-12.552-12.552-3.166 3.166 12.552 12.552-12.552 12.554 3.166 3.166 12.552-12.554 12.554 12.554 3.166-3.166-12.554-12.554 12.554-12.552z"></path>
+</symbol>
 </defs>
 </svg>
