@@ -134,7 +134,6 @@
 
 // ******* MOB MENU HEADER ********
 
-
 .menu-open-btn {
   display: block;
   margin-left: auto;
@@ -156,9 +155,8 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  padding-top: 48px;
-  padding-left: 20px;
-  padding-bottom: 48px;
+  padding: 48px 0px 48px 20px;
+
   background-color: var(--main-backgraund-color);
   z-index: 1;
 
@@ -178,6 +176,15 @@
   display: block;
   border: none;
   background-color: transparent;
+
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
+}
+
+.mob-menu_btn-icon {
+  fill: currentColor;
 }
 
 .mob-menu__list,
@@ -194,8 +201,8 @@
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: var(--tittle-text-color);
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  color: var(--main-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &--current,
   &:hover,
   :focus {
@@ -208,11 +215,15 @@
 }
 
 .mob-contacts__tel {
-  font-weight: 500;
-  font-size: 34px;
+  font-size: 32px;
   line-height: 1.18;
-  letter-spacing: 0.02em;
+  font-weight: 500;
   color: var(--accent-color);
+  letter-spacing: 0.02em;
+  @include mobile {
+    font-size: 34px;
+    line-height: 1.18;
+  }
 }
 
 .mob-contacts__mail {
@@ -220,7 +231,7 @@
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: var(--content-text-colot);
 }
 
 .mob-soc {
@@ -232,7 +243,7 @@
 .mob-soc__item {
   position: relative;
   &:not(:first-child):before {
-    content: "";
+    content: '';
     position: absolute;
     right: 100%;
     top: 50%;
@@ -256,12 +267,6 @@
     font-size: 18px;
   }
 }
-
-
-
-
-
-
 
 /* .header-contacs::before {
   content: '';

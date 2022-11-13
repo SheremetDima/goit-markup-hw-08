@@ -54,6 +54,7 @@
   left: 12px;
   bottom: 11px;
   fill: currentColor;
+  pointer-events: none;
 }
 
 .modal-input:focus + .modal-input-icon {
@@ -89,27 +90,28 @@
   margin-bottom: 30px;
 }
 
+.privacy {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .check-text {
-
-
-
-  display: block;
-  font-size: 12px;
-  line-height: 1.17;
-  color: var(--content-text-colot);
-  margin-right: 9px;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
+  justify-content: center;
   position: relative;
+
+  font-size: 11px;
+  line-height: 1.17;
+  color: var(--content-text-colot);
+  margin-right: 9px;
 
   @include desktop {
     font-size: 14px;
     line-height: 1.71;
   }
- 
+
   & span {
     width: 16px;
     height: 15px;
@@ -161,6 +163,7 @@
   font-size: 12px;
   line-height: 1.17;
   text-decoration-line: underline;
+  margin-left: 5px;
   color: var(--accent-color);
 
   @include desktop {

@@ -39,10 +39,10 @@
   <body>
     <header class="header">
       <div class="header-conteiner container">
+        <a class="logo link" lang="en" href="./index.html"
+          >Web<span class="header-logo-color">Studio</span></a
+        >
         <nav class="header-nav">
-          <a class="logo link" lang="en" href="./index.html"
-            >Web<span class="header-logo-color">Studio</span></a
-          >
           <ul class="header-menu list">
             <li class="header-menu-item item">
               <a class="header-nav-link link" href="./index.html">Студія</a>
@@ -59,20 +59,63 @@
           <li class="header-contacs-item item">
             <a class="header-contacs link" href="mailto:info@devstudio.com">
               <svg class="contacts-icon icon" width="16" ; height="12" ;>
-                <use href="./images/sprite_orig.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
+                <use href="./images/sprite_orig.svg#icon-envelope"></use></svg
+              >info@devstudio.com
             </a>
           </li>
           <li class="header-contacs-item item">
             <a class="header-contacs link" href="tel:+380961111111"
               ><svg class="contacts-icon icon" width="10" ; height="16" ;>
-                <use href="./images/sprite_orig.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
+                <use href="./images/sprite_orig.svg#icon-phone"></use></svg
+              >+38 096 111 11 11
             </a>
           </li>
         </ul>
+        <!-- mob menu header -->
+        <button class="menu-open-btn" type="button" data-menu-open>
+          <svg width="24" height="16" aria-label="Перемикач мобільного меню.">
+            <use href="./images/sprite_orig.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <button class="mob-menu_btn" type="button" data-menu-close>
+            <svg
+              class="mob-menu_btn-icon"
+              width="18.67"
+              height="18.67"
+              aria-label="Перемикач мобільного меню."
+            >
+              <use href="./images/sprite_orig.svg#icon-close-mob"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item item">
+              <a class="mob-menu__link link mob-menu__link--current" href="./index.html">Студія</a>
+            </li>
+            <li class="mob-menu__item item">
+              <a class="mob-menu__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mob-menu__item item">
+              <a class="mob-menu__link link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mob-contacts list">
+            <li class="mob-contacts__item item">
+              <a class="mob-contacts__tel link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+            </li>
+            <li class="mob-contacts__item item">
+              <a class="mob-contacts__mail link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mob-soc list">
+            <li class="mob-soc__item item"><a class="mob-soc__link link" href="">Instagram</a></li>
+            <li class="mob-soc__item item"><a class="mob-soc__link link" href="">Twitter</a></li>
+            <li class="mob-soc__item item"><a class="mob-soc__link link" href="">Facebook</a></li>
+            <li class="mob-soc__item item"><a class="mob-soc__link link" href="">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
